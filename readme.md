@@ -14,13 +14,25 @@
 
 ```kotlin 
 // example code snippet
-val a: String = "value" // non-null type
+val a: String = "A" // non-null constant value of type "String"
+
+val b: String? = null   //nullable variable because of "String?" datatype
+val c: String = null    // compile-time error "Null can not be a value of a non-null type String"
+println(a)  // won't throw error, will output "A"
+println(b)  // won't throw error, but will output "null"
+println(c)  // won't execute due to compile-time error
+
 ```
 
 ### What are lambda expressions and higher order functions in Kotlin? Why would you store a function inside a variable? (0,5 points)
 
 <span style="color:blue">Provide your answer here!</span>
 
+```
+Lambda expressions are meant to provide a very concise way to code and implement anonymous functions/function literals.
+Higher order functions have other functions/methods as parameters or return a function themselves, which allows for a very flexible and powerful way to abstract functionality, create reusable components,
+and handle common patterns of data manipulation.
+```
 ### Provide a solution for the following number guessing game inside `App.kt`. (3 points)
 
 ## Number Guessing Game in Kotlin
